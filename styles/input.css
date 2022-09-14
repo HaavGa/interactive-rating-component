@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .circle {
+    @apply flex justify-center items-center bg-neutral-200/[0.08] w-11 h-11 rounded-full;
+  }
+
+  .choose-rating {
+    @apply select-none smooth hover:bg-primary text-neutral-100 hover:text-white cursor-pointer focus:bg-neutral-200 focus:text-white;
+  }
+
+  .smooth {
+    @apply transition duration-150 ease-in-out;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

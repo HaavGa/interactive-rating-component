@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/output.css" />
+    <script src="./js/main.js" defer></script>
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body
+    class="flex h-screen flex-col items-center justify-center bg-neutral-400 font-main text-white"
+  >
+    <main
+      class="h-[360px] w-[360px] space-y-1 rounded-3xl bg-neutral-300 p-6"
+      id="rating-panel"
+    >
+      <!-- Rating state start -->
+      <div class="circle">
+        <img class="w-4" src="./images/icon-star.svg" alt="star" />
+      </div>
+      <h1 class="pt-2 text-[1.7rem] font-semibold">How did we do?</h1>
+      <p class="text-[15px] text-neutral-100">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <div class="flex justify-between pt-4 pb-6">
+        <button class="circle choose-rating rating">1</button>
+        <button class="circle choose-rating rating">2</button>
+        <button class="circle choose-rating rating">3</button>
+        <button class="circle choose-rating rating">4</button>
+        <button class="circle choose-rating rating">5</button>
+      </div>
+      <button
+        class="smooth text-md w-full rounded-full bg-primary py-3 uppercase tracking-[.15em] hover:bg-white hover:text-primary"
+        id="btn-submit"
+      >
+        Submit
+      </button>
+
+      <!-- Rating state end -->
+    </main>
+
+    <!-- Thank you state start -->
+    <main
+      class="hidden h-[360px] w-[360px] rounded-3xl bg-neutral-300 p-6 text-center"
+      id="thank-you-panel"
+    >
+      <div class="flex justify-center">
+        <img
+          class="w-32"
+          src="./images/illustration-thank-you.svg"
+          alt="thank you"
+        />
+      </div>
+      <p
+        class="m-auto mt-6 w-44 rounded-full bg-neutral-200/[0.08] px-3 pt-2 pb-1 text-sm text-primary"
+      >
+        You selected <span id="number"></span> out of 5
+      </p>
+      <h1 class="mt-6 text-[1.7rem] font-semibold">Thank you!</h1>
+      <p class="mt-3 text-[15px] text-neutral-100">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch!
+      </p>
+    </main>
+
+    <!-- Thank you state end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Håvard Garsrud</a>.
+    </div>
+  </body>
+</html>
